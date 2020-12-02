@@ -6,7 +6,7 @@ import App from "./App";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    {window.navigator.onLine ? <App /> : <h1>offline</h1>}
   </BrowserRouter>,
   document.getElementById("root")
 );
